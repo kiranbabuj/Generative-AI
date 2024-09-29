@@ -8,7 +8,7 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core import Settings, VectorStoreIndex, SimpleDirectoryReader
 
 # Streamlit UI for OpenAI API key input
-st.title("LLM Query App with LlamaIndex")
+st.title("Finance Assistant")
 
 # Input API Key
 api_key = st.text_input("Enter your OpenAI API key", type="password")
