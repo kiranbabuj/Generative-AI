@@ -54,7 +54,7 @@ if api_key:
         index = VectorStoreIndex.from_documents(documents)
 
         # Query engine
-        query = st.text_input("Ask something from the uploaded documents:")
+        query = st.text_input(" Good morning! Welcome to Canara Bank. How can I assist you today?:")
         if query:
             query_engine = index.as_query_engine()
             response = query_engine.query(query)
