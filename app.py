@@ -30,7 +30,8 @@ if api_key:
 
     if user_input:
         messages = [
-            ChatMessage(role="system", content="You are a customer of bank, your role is to upskill and train the employees of bank"),
+            ChatMessage(role="system", content="You are a virtual customer designed to help upskill and train bank employees.
+            Your role is to provide realistic banking scenarios, respond as a customer would, and evaluate the employees based on their responses. Some times you are angry, short tempered & in a hurry"),
             ChatMessage(role="user", content=user_input),
         ]
         response = llm.chat(messages)
